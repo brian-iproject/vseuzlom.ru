@@ -1,0 +1,27 @@
+.footer-menu {
+}
+
+	.footer-menu__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+		.footer-menu__item {
+
+		}
+
+			.footer-menu__item + .footer-menu__item {
+				margin-top: 20px;
+			}
+
+			.footer-menu__link {
+				color: var(--color-black);
+				text-decoration-color: transparent;
+			}
+
+				.footer-menu__link:hover,
+				.footer-menu__link:active {
+					color: var(--color-primary);
+					text-decoration-color: var(--color-primary);
+				}

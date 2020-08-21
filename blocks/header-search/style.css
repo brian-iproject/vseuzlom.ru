@@ -1,0 +1,17 @@
+.header-search {
+}
+
+	.header-search__button {
+		padding: 0;
+		margin: 0;
+		background: none;
+		border: none;
+		cursor: pointer;
+	}
+
+		.header-search__button .svg-icon {
+			width: 21px;
+			height: 21px;
+			fill: var(--color-primary);
+			transition: .3s;
+		}

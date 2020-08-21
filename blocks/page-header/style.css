@@ -1,0 +1,222 @@
+.page-header {
+	padding: 30px 0;
+	border-bottom: 17px solid;
+	border-image-source: url(../../images/kanat.png);
+	border-image-slice: 0 0 17 0;
+	border-image-repeat: round;
+}
+
+	.page-header__inner {
+		display: flex;
+		font-size: var(--font-size--large);
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 -15px;
+	}
+
+		.page-header__logo {
+			padding: 0 15px;
+			display: flex;
+			flex-shrink: 0;
+			flex-grow: 1;
+			align-items: center;
+		}
+
+			.page-header__logo-image {
+				flex-shrink: 0;
+			}
+
+				.page-header__logo-image svg {
+					fill: var(--color-primary);
+					width: 75px;
+					height: 46px;
+				}
+
+			.page-header__logo-slogan {
+				color: var(--color-gray--dark);
+				padding-left: 20px;
+				border-left: 1px solid var(--color-secondary);
+				font-weight: 300;
+				margin-left: 26px;
+				flex-shrink: 0;
+				display: none;
+			}
+
+		.page-header__nav {
+			padding: 0 15px;
+		}
+
+			.page-header__burger {
+			}
+
+				.page-header__burger-button {
+					background-color: transparent;
+					border: 0;
+					cursor: pointer;
+					display: block;
+					outline: none;
+					padding: 0;
+					width: 27px;
+				}
+
+					.page-header__burger-button:before {
+						background: var(--color-primary);
+						content: "";
+						display: block;
+						height: 5px;
+						transition: transform .3s;
+						width: 100%;
+					}
+
+					.page-header__burger-button:after {
+						background: var(--color-primary);
+						content: "";
+						display: block;
+						height: 5px;
+						transition: transform .3s;
+						width: 100%;
+					}
+
+					.page-header__burger-button span {
+						background: var(--color-primary);
+						border-radius: 1px;
+						content: "";
+						display: block;
+						height: 5px;
+						margin: 3px 0;
+						width: 100%;
+					}
+
+						.page-header__burger-button.--is-active:before {
+							transform: translateY(6px) translateX(9px) rotate(-45deg);
+							transform-origin: 50% 50%;
+							width: 73%;
+						}
+
+						.page-header__burger-button.--is-active:after {
+							transform: translateY(-10px) translateX(-2px) rotate(45deg);
+							transform-origin: 50% 50%;
+							width: 73%;
+						}
+
+						.page-header__burger-button.--is-active span {
+							opacity: 0;
+						}
+
+			.page-header__menu {
+				display: none;
+			}
+
+
+
+
+		.page-header__callback {
+			padding: 0 15px;
+			flex: 0 0 auto;
+		}
+
+			.page-header__clb-desktop {
+				display: none;
+			}
+
+			.page-header__clb-mobile {
+				width: 40px;
+				height: 40px;
+				border: 2px solid var(--color-primary);
+				transition: .3s;
+				border-radius: 5px;
+				padding: 0;
+				margin: 0;
+				background: none;
+				cursor: pointer;
+			}
+
+				.page-header__clb-mobile .svg-icon {
+					width: 27px;
+					height: 27px;
+					fill: var(--color-primary);
+					transition: .3s;
+				}
+
+				.page-header__clb-mobile:hover {
+					background: var(--color-primary);
+				}
+
+					.page-header__clb-mobile:hover .svg-icon {
+						fill: #fff;
+					}
+
+		.page-header__search {
+			padding: 0 15px;
+		}
+
+@media (min-width: 320px) {
+}
+
+@media (min-width: 768px) {
+	.page-header {
+	}
+
+		.page-header__inner {
+			flex-wrap: wrap;
+		}
+
+			.page-header__logo {
+			}
+
+				.page-header__logo-slogan {
+					display: block;
+				}
+
+				.page-header__logo-image {
+				}
+
+					.page-header__logo-image svg {
+						width: 98px;
+						height: 60px;
+					}
+
+			.page-header__nav {
+				display: block;
+				order: 1;
+				margin-top: 28px;
+				flex: 1 1 100%;
+				max-width: 100%;
+			}
+
+				.page-header__burger {
+					display: none;
+				}
+
+				.page-header__menu {
+					display: block;
+				}
+
+			.page-header__callback {
+			}
+
+				.page-header__clb-desktop {
+					display: block;
+				}
+
+				.page-header__clb-mobile {
+					display: none;
+				}
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
+	.page-header {
+	}
+
+		.page-header__inner {
+			flex-wrap: nowrap;
+		}
+
+			.page-header__nav {
+				order: 0;
+				margin-top: 0;
+			}
+}

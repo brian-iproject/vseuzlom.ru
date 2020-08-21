@@ -1,0 +1,35 @@
+.social-media {
+}
+
+	.social-media__list {
+		margin: 0 -5px;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		justify-content: center;
+	}
+
+		.social-media__item {
+			padding: 0 5px;
+		}
+
+			.social-media__link {
+				text-decoration: none;
+			}
+
+				.social-media__link .svg-icon {
+					width: 36px;
+					height: 36px;
+					fill: var(--color-primary);
+					transition: .3s;
+				}
+
+				.social-media__link:hover .svg-icon {
+					fill: var(--color-primary--dark)
+				}
+
+@media (min-width: 768px) {
+	.social-media__list {
+		justify-content: flex-start;
+	}
+}

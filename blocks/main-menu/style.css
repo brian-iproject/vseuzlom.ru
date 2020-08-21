@@ -1,0 +1,27 @@
+.main-menu {
+}
+
+	.main-menu__list {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+		.main-menu__item {
+			padding: 0 2px;
+		}
+
+			.main-menu__link {
+				padding: 14px 20px;
+				color: var(--color-black);
+				border-radius: 5px;
+				text-decoration: none;
+			}
+
+				.main-menu__link:hover,
+				.main-menu__link:active {
+					background: var(--color-primary);
+					color: #fff;
+				}
