@@ -30,7 +30,7 @@ const app = {
 
     init: function() {
         this.mobileMenuToggle();
-        this.svgLoad();
+        //this.svgLoad();
     }
 };
 

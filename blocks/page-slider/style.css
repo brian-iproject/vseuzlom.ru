@@ -1,11 +1,11 @@
 .page-slider {
-	height: 433px;
+	height: 260px;
 	overflow: hidden;
 	margin-top: -2px;
 }
 
 	.page-slider__item {
-		height: 433px;
+		height: 260px;
 		overflow: hidden;
 		position: relative;
 	}
@@ -28,27 +28,26 @@
 			position: absolute;
 			right: 0;
 			text-align: center;
-			top: 38px;
+			top: 0;
+			bottom: 0;
 			z-index: 5;
+			font-family: var(--font-family-secondary);
+			display: flex;
+			align-items: center;
 		}
 			
 			.page-slider__info-inner {
-				padding: 24px 44px;
 			}
 		
-				.page-slider__info-inner--background {
-					background: #fff;
-					color: #000;
-				}
-		
 			.page-slider__name {
-				font-size: 22px;
+				font-size: 36px;
 				font-weight: 700;
 				margin-bottom: 20px;
 				text-transform: uppercase;
 			}
 			
 			.page-slider__desc {
+				font-size: 18px;
 			}
 			
 	.page-slider__dots {
@@ -68,7 +67,7 @@
 			border-radius: 50%;
 			margin: 0 4px;
 			padding: 1px;
-			transition: var(--transition);
+			transition: .3s;
 		}
 
 			.page-slider__dots li:hover,
@@ -88,7 +87,7 @@
 				margin: 0;
 				outline: none;
 				padding: 0;
-				transition: var(--transition);
+				transition: .3s;
 				width: 11px;
 			}
 		
@@ -98,29 +97,45 @@
 			}
 
 @media (min-width: 768px) {
-	.page-slider__image {
-		margin-left: -567px;
+	.page-slider {
+		height: 340px;
 	}
 	
-	.page-slider__info {
-		align-items: center;
-		bottom: 0;
-		display: flex;
-		padding: 60px;
-		text-align: left;
-		top: 0;
-	}
-	
-		.page-slider__name {
-			font-size: 38px;
+		.page-slider__item {
+			height: 340px;
 		}
 	
-		.page-slider__desc {
-		}
+			.page-slider__image {
+				margin-left: -600px;
+			}
+			
+				.page-slider__name {
+					font-size: 50px;
+				}
+			
+				.page-slider__desc {
+					font-size: 22px;
+				}
 }
 
-@media (min-width: 992px) {
-	.page-slider__info {
-		width: 70%;
+@media (min-width: 1200px) {
+	.page-slider {
+		height: 420px;
 	}
+	
+		.page-slider__item {
+			height: 420px;
+		}
+	
+			.page-slider__image {
+				margin-left: -960px;
+			}
+	
+				.page-slider__name {
+					font-size: 62px;
+				}
+				
+				.page-slider__desc {
+					font-size: 26px;
+				}
 }

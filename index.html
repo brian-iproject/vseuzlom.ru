@@ -25,6 +25,7 @@
 	<link href="blocks/footer-menu/style.css" rel="stylesheet" type="text/css">
 	<link href="blocks/header-search/style.css" rel="stylesheet" type="text/css">
 	<link href="blocks/page-slider/style.css" rel="stylesheet" type="text/css">
+	<link href="blocks/news-list/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div style="display: none">
@@ -140,18 +141,52 @@
 				<img src="blocks/page-slider/images/slide1-1920.jpg" alt="">
 			</picture>
 			<div class="page-slider__info">
-				<div class="page-slider__info-inner page-slider__info-inner--background">
-					<div class="page-slider__name">Сезонное предложение — дверь с терморазрывом<br>от <span class="color-primary">26 000 руб.</span></div>
-					<div class="page-slider__desc">Оптимальный выбор для загородного дома и дачи!</div>
+				<div class="page-container page-slider__info-inner">
+					<div class="page-slider__name">Веревки, канаты, узлы</div>
+					<div class="page-slider__desc">и все, что с ними связано</div>
 				</div>
 			</div>
 		</div>
-
-
+		<div class="page-slider__item">
+			<picture class="page-slider__image">
+				<source srcset="blocks/page-slider/images/slide1-768.jpg" media="(max-width: 767px)">
+				<source srcset="blocks/page-slider/images/slide1-1200.jpg" media="(max-width: 1199px)">
+				<img src="blocks/page-slider/images/slide1-1920.jpg" alt="">
+			</picture>
+			<div class="page-slider__info">
+				<div class="page-container page-slider__info-inner">
+					<div class="page-slider__name">Веревки, канаты, узлы</div>
+					<div class="page-slider__desc">и все, что с ними связано</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 
-	<main class="page-content"></main>
+	<main class="page-container page-content">
+		<h2 class="ta-c">Новости</h2>
+		<div class="news-list">
+			<div class="news-list__item">
+				<div class="news-list__image"><img src="blocks/news-list/images/img1.jpg" alt=""></div>
+				<div class="news-list__date">20 июня 2020</div>
+				<div class="news-list__name">Подробный разбор конструктивных особенностей второго поколения рюкзака HPG Umlindi</div>
+				<div class="news-list__desc">Американская компания Hill People Gear (HPG) опубликовала почти восьмиминутный видеоролик, в котором Эван Хилл (Evan Hill).</div>
+			</div>
+			<div class="news-list__item">
+				<div class="news-list__image"><img src="blocks/news-list/images/img1.jpg" alt=""></div>
+				<div class="news-list__date">20 июня 2020</div>
+				<div class="news-list__name">Подробный разбор конструктивных особенностей второго поколения рюкзака HPG Umlindi</div>
+				<div class="news-list__desc">Американская компания Hill People Gear (HPG) опубликовала почти восьмиминутный видеоролик, в котором Эван Хилл (Evan Hill).</div>
+			</div>
+			<div class="news-list__item">
+				<div class="news-list__image"><img src="blocks/news-list/images/img1.jpg" alt=""></div>
+				<div class="news-list__date">20 июня 2020</div>
+				<div class="news-list__name">Подробный разбор конструктивных особенностей второго поколения рюкзака HPG Umlindi</div>
+				<div class="news-list__desc">Американская компания Hill People Gear (HPG) опубликовала почти восьмиминутный видеоролик, в котором Эван Хилл (Evan Hill).</div>
+			</div>
+		</div>
+		
+	</main>
 	<footer class="page-footer">
 		<div class="page-container page-footer__inner">
 			<div class="page-footer__info">
@@ -251,8 +286,9 @@
 </div>
 </body>
 
-<script src="libs/jquery/jquery-3.4.1.min.js" defer></script>
-<script src="script.js"></script>
+<script src="libs/jquery/jquery-3.4.1.min.js"></script>
 <script src="libs/slick/slick.min.js"></script>
 <script src="blocks/page-slider/script.js"></script>
+
+<script src="script.js"></script>
 </html>
