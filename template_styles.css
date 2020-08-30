@@ -30,19 +30,27 @@ body {
 	width: 100%;
 }
 
-
-
-.page-slider {
-
-}
-
 .page-content {
 	flex-grow: 1;
 	flex-shrink: 0;
-	
-	padding-top: 3em;
-	padding-bottom: 6em;
 }
+
+	.page-content__before {
+		padding: 1em 0;
+	}
+
+		.page-content__before--border-rope {
+			border-bottom: 17px solid;
+			border-image-source: url(images/kanat.png);
+			border-image-slice: 0 0 17 0;
+			border-image-repeat: round;
+			padding: 3em 0;
+		}
+
+	.page-content__inner {
+		padding-top: 3em;
+		padding-bottom: 6em;
+	}
 
 .page-footer {
 	background-color: var(--color-secondary);
@@ -53,8 +61,8 @@ body {
 }
 
 	.page-footer__inner {
-		padding-top: 26px;
-		padding-bottom: 40px;
+		padding-top: 2em;
+		padding-bottom: 3em;
 		font-size: var(--font-size--large);
 		line-height: 1.4;
 	}
@@ -111,8 +119,8 @@ body {
 	}
 
 		.page-footer__inner {
-			padding-top: 54px;
-			padding-bottom: 84px;
+			padding-top: 3.5em;
+			padding-bottom: 5.25em;
 		}
 
 			.page-footer__info {

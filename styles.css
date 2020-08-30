@@ -42,7 +42,7 @@ h1,
 .h1 {
 	font-size: 22px;
 	font-weight: 700;
-	margin: 0 0 1em 0;
+	margin: 0 0 1.3em 0;
 	position: relative;
 }
 
@@ -50,7 +50,7 @@ h2,
 .h2 {
 	font-size: 18px;
 	font-weight: 700;
-	margin: 0 0 .5em 0;
+	margin: 0 0 1.3em 0;
 	padding: 0;
 }
 
@@ -58,7 +58,7 @@ h3,
 .h3 {
 	font-size: 16px;
 	font-weight: 700;
-	margin: 0 0 .5em 0;
+	margin: 0 0 1.3em 0;
 	padding: 0;
 }
 
@@ -66,7 +66,7 @@ h4,
 .h4 {
 	font-size: 14px;
 	font-weight: 700;
-	margin: 0 0 .5em 0;
+	margin: 0 0 1.3em 0;
 	padding: 0;
 }
 
@@ -92,7 +92,7 @@ h4,
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
 	h1,
 	.h1 {
 		font-size: 36px;
@@ -111,18 +111,6 @@ h4,
 	h4,
 	.h4 {
 		font-size: 18px;
-	}
-}
-
-@media (min-width: 1200px) {
-	h1,
-	.h1 {
-		font-size: 40px;
-	}
-	
-	h2,
-	.h2 {
-		font-size: 26px;
 	}
 }
 
@@ -150,7 +138,7 @@ a {
 	a,
 	.pseudo-link {
 		color: var(--color-primary);
-		text-decoration-color: var(--color-primary);
+		text-decoration-color: currentColor;
 		transition: .3s;
 	}
 
@@ -179,6 +167,13 @@ img {
 	font-size: 12px;
 	color: var(--color-gray--light);
 	margin-top: 12px;
+}
+
+hr {
+	padding: 0;
+	border: none;
+	border-top: 1px solid var(--color-secondary);
+	margin: 2.5em 0;
 }
 
 .clear {
@@ -351,7 +346,7 @@ img {
 	text-align: center;
 	text-decoration: none;
 	transition: .3s;
-	border-radius: 5px;
+	border-radius: .3em;
 }
 
 	.site-button:hover,

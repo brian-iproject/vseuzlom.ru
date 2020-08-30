@@ -16,7 +16,7 @@
 			.main-menu__link {
 				padding: 14px 20px;
 				color: var(--color-black);
-				border-radius: 5px;
+				border-radius: .3em;
 				text-decoration: none;
 			}
 

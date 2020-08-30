@@ -124,7 +124,7 @@
 				height: 40px;
 				border: 2px solid var(--color-primary);
 				transition: .3s;
-				border-radius: 5px;
+				border-radius: .3em;
 				padding: 0;
 				margin: 0;
 				background: none;
