@@ -35,11 +35,11 @@ body {
 	flex-shrink: 0;
 }
 
-	.page-content__before {
+	.page-content__prolog {
 		padding: 1em 0;
 	}
 
-		.page-content__before--border-rope {
+		.page-content__prolog--border-rope {
 			border-bottom: 17px solid;
 			border-image-source: url(images/kanat.png);
 			border-image-slice: 0 0 17 0;

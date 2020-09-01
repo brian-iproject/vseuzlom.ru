@@ -51,8 +51,6 @@
 			.tile-items__title {
 			}
 
-
-
 @media (min-width: 768px) {
 	.tile-items__item {
 		flex: 0 0 25%;
