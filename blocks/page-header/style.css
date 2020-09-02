@@ -107,9 +107,6 @@
 				display: none;
 			}
 
-
-
-
 		.page-header__callback {
 			padding: 0 15px;
 			flex: 0 0 auto;
@@ -213,10 +210,17 @@
 
 		.page-header__inner {
 			flex-wrap: nowrap;
+			font-size: var(--font-size);
 		}
 
 			.page-header__nav {
 				order: 0;
 				margin-top: 0;
 			}
+}
+
+@media (min-width: 1300px) {
+	.page-header__inner {
+		font-size: var(--font-size--large);
+	}
 }
