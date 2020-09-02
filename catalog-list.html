@@ -29,6 +29,7 @@
 	<link href="blocks/categories-list/style.css" rel="stylesheet" type="text/css">
 	<link href="blocks/tile-items/style.css" rel="stylesheet" type="text/css">
 	<link href="blocks/breadcrumbs/style.css" rel="stylesheet" type="text/css">
+	<link href="blocks/categories-tabs/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div style="display: none">
@@ -102,11 +103,26 @@
 
 					<div class="page-header__menu js-nav">
 						<nav class="main-menu">
-						<ul class="main-menu__list">
-							<li class="main-menu__item"><a href="#" class="main-menu__link">ТОП 1</a></li>
-							<li class="main-menu__item"><a href="#" class="main-menu__link">По активности</a></li>
-							<li class="main-menu__item"><a href="#" class="main-menu__link">По назначению</a></li>
-							<li class="main-menu__item"><a href="#" class="main-menu__link">Информация</a></li>
+						<ul class="main-menu__list main-menu__list--lvl1">
+							<li class="main-menu__item main-menu__item--lvl1">
+								<a href="#" class="main-menu__link main-menu__link--lvl1">ТОП 10</a>
+							</li>
+							<li class="main-menu__item main-menu__item--lvl1 main-menu__item--parent">
+								<a href="#" class="main-menu__link main-menu__link--lvl1 main-menu__link--parent">По активности</a>
+								<ul class="main-menu__list main-menu__list--lvl2">
+									<li class="main-menu__item main-menu__item--lvl2"><a href="#" class="main-menu__link main-menu__link--lvl2">Альпинизм</a></li>
+									<li class="main-menu__item main-menu__item--lvl2"><a href="#" class="main-menu__link main-menu__link--lvl2">Походы</a></li>
+									<li class="main-menu__item main-menu__item--lvl2"><a href="#" class="main-menu__link main-menu__link--lvl2">Дом</a></li>
+									<li class="main-menu__item main-menu__item--lvl2"><a href="#" class="main-menu__link main-menu__link--lvl2">Рыбалка</a></li>
+									<li class="main-menu__item main-menu__item--lvl2"><a href="#" class="main-menu__link main-menu__link--lvl2">Море-яхты</a></li>
+								</ul>
+							</li>
+							<li class="main-menu__item main-menu__item--lvl1">
+								<a href="#" class="main-menu__link main-menu__link--lvl1">По назначению</a>
+							</li>
+							<li class="main-menu__item main-menu__item--lvl1">
+								<a href="#" class="main-menu__link main-menu__link--lvl1">Информация</a>
+							</li>
 						</ul>
 					</nav>
 					</div>
@@ -136,29 +152,276 @@
 		</div>
 	</header>
 
-
-
-
-
-
 	<main class="page-content">
+		<div class="page-content__heading">
+			<img src="images/content-heading.jpg" alt="" class="page-content__image">
+			<div class="page-container page-content__heading-inner">
+				<h1>Море-яхты</h1>
+			</div>
+		</div>
 
-		<div class="page-content__prolog">
-			<div class="page-container">
-				<div class="breadcrumbs">
-					<ul class="breadcrumbs__list">
-						<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
-						<li class="breadcrumbs__item"><span class="breadcrumbs__link">Море-яхты</span></li>
-					</ul>
+		<div class="page-content__prolog page-container">
+			<div class="page-content__services">
+				<div class="page-content__breadcrumbs">
+					<div class="breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link">Главная</a></li>
+							<li class="breadcrumbs__item breadcrumbs__item--current"><span class="breadcrumbs__link">Море-яхты</span></li>
+						</ul>
+					</div>
+				</div>
+				<div class="page-content__shared">
+					<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,whatsapp,telegram" data-limit="6"></div>
 				</div>
 			</div>
 		</div>
 
 		<div class="page-container page-content__inner">
-			<h2 class="ta-c">Новости</h2>
+			<div class="categories-tabs">
+				<ul class="categories-tabs__list">
+					<li class="categories-tabs__item">
+						<a href="#" class="categories-tabs__link">Альпинизм</a>
+					</li>
+					<li class="categories-tabs__item">
+						<a href="#" class="categories-tabs__link">Походы</a>
+					</li>
+					<li class="categories-tabs__item">
+						<a href="#" class="categories-tabs__link">Дом</a>
+					</li>
+					<li class="categories-tabs__item">
+						<a href="#" class="categories-tabs__link">Рыбалка</a>
+					</li>
+					<li class="categories-tabs__item">
+						<span class="categories-tabs__link categories-tabs__link--current">Море-яхты</span>
+					</li>
+					<li class="categories-tabs__item">
+						<a href="#" class="categories-tabs__link">Связывания двух веревок</a>
+					</li>
+					<li class="categories-tabs__item">
+						<a href="#" class="categories-tabs__link">Для привязывания</a>
+					</li>
+					<li class="categories-tabs__item">
+						<a href="#" class="categories-tabs__link">Петли</a>
+					</li>
+					<li class="categories-tabs__item">
+						<a href="#" class="categories-tabs__link">Саморазвязывающиеся</a>
+					</li>
+					<li class="categories-tabs__item">
+						<a href="#" class="categories-tabs__link">Самозатягивающиеся</a>
+					</li>
+				</ul>
+			</div>
 
+			<div class="tile-items">
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+						<div class="tile-items__description">Промежуточный размер стопора используют на один оборот больше, чем на рисунке.</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название еще одного узла</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Суперморской узел 2000</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+			</div>
+
+			<hr>
+
+			<div class="two-column --margin-large">
+				<h4>Заголовок</h4>
+				<p>Издавна узлы применялись для скрепления стягивания и перевязывания различных инструментов, крючков и других
+					приспособлений. Узлы имеют давнюю историю и интересны своим практическим применением. Правильный и крепкий
+					узел - лучший метод для соединения чего либо с помощью верёвки, лески, бечевки, при помощи переплетения или
+					связывания.</p>
+				<p>Соединение узлом может состоять из одного или нескольких отрезков верёвки разной длины, разного диаметра или
+					других подобных элементов, сплетённых так, что они либо соединены между собой, или соединены с другим
+					элементом крепления.</p>
+				<p>Во времена парусного флота считалось, что простой узел снижает надёжность верёвки в 2 раза.</p>
+			</div>
 
 			<h2 class="ta-c">Вы интересовались</h2>
+			<div class="tile-items tile-items--last-seen">
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+				<div class="tile-items__item">
+					<a href="#" class="tile-items__link">
+						<picture class="tile-items__image">
+							<source srcset="blocks/tile-items/images/img1.jpg" media="(min-width: 1200px)">
+							<img src="blocks/tile-items/images/img2.jpg" alt="">
+						</picture>
+						<div class="tile-items__title">Название узла</div>
+					</a>
+				</div>
+			</div>
 		</div>
 
 		
@@ -263,6 +526,9 @@
 	</footer>
 </div>
 </body>
+<script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+<script src="https://yastatic.net/share2/share.js"></script>
+
 
 <script src="libs/jquery/jquery-3.4.1.min.js"></script>
 <script src="libs/slick/slick.min.js"></script>
